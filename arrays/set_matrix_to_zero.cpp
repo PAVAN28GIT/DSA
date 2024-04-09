@@ -39,5 +39,5 @@ public:
 // info ---> remove duplicates;
 
         // sort(arr.begin(), arr.end()); //sort
-        // auto last = unique(arr.begin(), arr.end()); // move duplicates to end
+        // auto last = unique(arr.begin(), arr.end()); // unique function in C++ removes only consecutive duplicate elements within a range.
         // erase(last,arr.end()); // erase them
