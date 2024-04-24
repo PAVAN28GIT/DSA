@@ -25,7 +25,7 @@ void heapify(int arr[],int i, int n){
 // for 1th index heap 
 
 // left child = 2n
-// right child = 3n
+// right child = 2n+1
 // parent = n/2
 
 // leafnode = n/2+1 to n
