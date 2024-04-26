@@ -36,8 +36,13 @@ sort(result.begin(), result.end(), [](const auto &a, const auto &b) {
 
 // sort based on key
 sort(vec.begin(),vec.end());
-  
 
+
+//find vlaue having key = 2
+auto it = my_map.find(2);        // if key=2 is not in map...it will be pointing to iteration after last element of map....which is my_map.end()
+
+
+// find key using value
 int findkey(map<int,int> &map,int key){
     for(auto pair: map){
         if (pair.second == key){
