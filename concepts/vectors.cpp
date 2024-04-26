@@ -46,3 +46,6 @@ int valueToRemove = 3;
 vec.erase(std::remove(vec.begin(), vec.end(), valueToRemove), vec.end());
 remove(vec.begin(), vec.end(), valueToRemove)  // will nmove valueToRemove to the end and return its iterator
 
+// find if element is in vector
+
+auto it = find(vec.begin(),vec.end(),value_to_find);
