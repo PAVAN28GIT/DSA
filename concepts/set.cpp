@@ -58,5 +58,10 @@ int main() {
     // equal_range(): Returns range of elements matching a specific key.
     auto range = mySet.equal_range(5);
 
+   // Access elements using iterators
+    for (auto it = mySet.begin(); it != mySet.end(); ++it) {
+        std::cout << *it << " "; // Dereference the iterator to access the element
+    }
+
     return 0;
 }
