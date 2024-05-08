@@ -9,4 +9,9 @@ unordered_map<int, vector<int>> indexMap; // Map to store indices of elements
 
 
 
-// ----------------
+// ----------------  convert a string to an integer using the std::stoi function. --------------
+
+string str ='123'
+int num = stoi(str);
+
+// ---------------- 
