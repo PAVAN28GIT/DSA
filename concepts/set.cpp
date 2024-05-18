@@ -10,7 +10,14 @@ int main() {
     std::set<int> mySet;                                   // sorted 
 
     // Creating an unordered_set
-    std::unordered_set<int> myUnorderedSet;               // not sorted
+    std::unordered_set<int> myUnorderedSet;               // not sorted ..elements are stored like stack
+
+        myUnorderedSet.insert(2);          // first in will be at bottom 
+        myUnorderedSet.insert(4);
+        myUnorderedSet.insert(1);       // stored as {1,4,2}
+     
+
+  
 
     // insert(): Inserts an element into the set.
     mySet.insert(5);
