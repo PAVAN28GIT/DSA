@@ -25,6 +25,7 @@ public:
 
 
 // --------------- MONOTONIC STACK -------------   
+stack<pair<int,int>> st;
 
   int next(int price) {
         int count=1;
