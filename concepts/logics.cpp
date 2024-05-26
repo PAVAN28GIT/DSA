@@ -14,4 +14,14 @@ unordered_map<int, vector<int>> indexMap; // Map to store indices of elements
 string str ='123'
 int num = stoi(str);
 
-// ---------------- 
+// ----------------  MONOTONIC STACK ------------------------
+
+
+monotonic stack :  here u will maintain the order for elements, either ascending or descending..
+        in increasing monotonic stack .... 
+        u keep pushing numbers if its greater than top element... 
+        when u encounter element thats smaller than top element..
+        u pop untill the top element is smaller than new element that u want to push, and perform operations on all those poped elements...depending on question...
+
+
+
