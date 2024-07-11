@@ -28,3 +28,22 @@ public:
 //mistake
  //here u create empty vectors within result..but then u try to do result[i][j] = 0...
  //before this u shld initialise size for inside empty vecotr,,,so using result.resize()
+
+// SAME LOGIC BUT SHORTER AND EFFICIENT
+
+class Solution {
+public:
+    vector<vector<int>> generate(int numRows) {
+        vector<vector<int>> res(numRows);
+        res[0]={1};
+        for(int i =1;i<numRows;i++){
+            res[i].resize(i+1);
+            res[i][0] =1;
+            res[i][i] = 1;
+            for(int j = 1;j<i;j++){
+               res[i][j] = res[i-1][j-1] + res[i-1][j]; 
+        }
+    }
+    return res;
+    }
+};
