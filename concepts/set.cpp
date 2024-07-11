@@ -46,10 +46,10 @@ int main() {
     // count(): Counts the occurrences of a specific element.
     int count = mySet.count(5);
 
-    // lower_bound(): Returns an iterator to the first element not less than the given value.
+    // lower_bound(): Returns an iterator to the first element not less (i.e., greater than or equal to)than the given value.
     auto lower = mySet.lower_bound(5);
 
-    // upper_bound(): Returns an iterator to the first element greater than the given value.
+    // upper_bound(): Returns an iterator to the first element greater than (not equal to )the given value.
     auto upper = mySet.upper_bound(5);
 
     // swap(): Exchanges the contents of two sets.
