@@ -25,3 +25,31 @@ public:
         return profit;
     }
 };
+
+
+//TRY 2 : EASY ONE .. O(N) ...USING 2 POINTERS...
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int buy = 0;
+        int sell = 0;
+        int profit=0;
+
+        for(int i =1;i<prices.size();i++){
+            if(prices[buy]<prices[i] && prices[i]>prices[i-1]){
+                sell = i;
+                
+            }else{
+                if(sell>buy){
+                    profit += prices[sell] - prices[buy];
+                }
+                buy = i;
+            
+            }
+        }
+        if(sell>buy){
+            profit +=prices[sell] - prices[buy];
+        }
+        return profit;
+    }
+};
