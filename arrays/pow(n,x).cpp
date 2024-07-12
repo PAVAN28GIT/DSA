@@ -8,6 +8,7 @@ public:
     double myPow(double x, int n) {
 
         if(x == 1 || n==0) return 1;        // special case
+        
         double result =1;
         long power = n;
 
@@ -17,12 +18,14 @@ public:
         }
         
         while(power>0){
-            if(power%2 == 1){            // if power is odd..multiply once 
+            // odd
+            if(power%2 == 1){            // if power is odd..multiply x to res 
                 result *=x;             //  when 4^9 --->  4 * result
                 power--;
             }
-            x *= x;                  // when power is even ...4^10 = (4*4)^5 ...... this is what we are doing
-            power/=2; 
+            //even
+            x *= x;                  // when power is even ...double the x and half the pow
+            power/=2;                //4^10 = (4*4)^5 ...... this is what we are doing  
         }
         return result;
     }
