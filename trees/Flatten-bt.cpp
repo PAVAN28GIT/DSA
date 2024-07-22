@@ -7,14 +7,27 @@
     // else (means already node has thread) so remove that thread and move current_root to right
 
 
-
-
+//post preorder : coming from reverse
 class Solution {
 public:
 
-    // BRURTE FORCE : 
+    TreeNode* prev = NULL;
+    void flatten(TreeNode* root) {
+        if(root == NULL)return ;
+        flatten(root->right);
+        flatten(root->left);
+        root->left = NULL;
+        root->right = prev;
+        prev = root;
+    }
+};
+
+
+// BRURTE FORCE : 
 // 1. copy all nodes from current tree into queue in preorder way 
 // 2. change the tree .. keep adding nodes from queue into right side of root
+class Solution {
+public:
 
     void preorder(TreeNode* root,queue<int>& preord){
         if(root == NULL)return;
