@@ -3,6 +3,17 @@ using namespace std;
 
 vector<int> vec = {1, 2, 3, 4, 5};
 
+
+
+// int           =  4 bytes, [-2,147,483,648 to 2,147,483,647]
+// long          =  4 bytes, [-2,147,483,648 to 2,147,483,647] (platform-dependent, could be 8 bytes on some systems)
+// long long     =  8 bytes, [-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807]
+// float         =  4 bytes, [1.2E-38 to 3.4E+38] (approximate range)
+// double        =  8 bytes, [2.3E-308 to 1.7E+308] (approximate range)
+// long double   =  16 bytes, [3.4E-4932 to 1.1E+4932] (approximate range, platform-dependent)
+
+
+
 vec.push_back();     // append to end
 vec.pop_back();      // Removes the last element from the vector.
 vec.insert(vec.begin() + 1, 15);        // insert 15 at position 1
