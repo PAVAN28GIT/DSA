@@ -1,0 +1,42 @@
+
+
+select product_id from Products where low_fats='Y' and recyclable ='Y';
+
+select name from Customer where referee_id != 2 or referee_id is null;
+
+
+select name, population , area 
+from world
+where area >= 3000000 or population >= 25000000;
+
+// 1148 find all the authors that viewed at least one of their own articles.
+select DISTINCT author_id as id 
+from Views
+where author_id = viewer_id
+order by id;
+
+// 1683  number of characters used in the content of the tweet is strictly greater than 15.
+select tweet_id
+from Tweets 
+where LENGTH(content)>15;
+
+// 1378 left join
+// without aliasing  
+
+select unique_id , name 
+from EmployeeUNI right join Employees 
+on EmployeeUNI.id = Employees.id;
+
+//with aliasing 
+
+select eu.unique_id as unique_id , e.name as name
+from Employees e left join EmployeeUNI eu
+on e.id = eu.id;
+
+
+//  1068 inner join
+
+
+select product_name, year, price
+from Sales inner join Product
+on Sales.product_id = Product.product_id;
