@@ -58,3 +58,10 @@
             float y;    
         };  
         MyStruct s; // 's.x' and 's.y' contain garbage values
+
+
+# properties of BST
+  - left subtree are all smaller , right subtree are all bigger
+  - all elements are unique
+  - inorder traversal of bst will always be sorted
+
