@@ -65,3 +65,17 @@
   - all elements are unique
   - inorder traversal of bst will always be sorted
 
+
+# correct data structure to store numbers 
+
+Choosing the Right Data Structure:
+
+- For fast access by index: Use arrays or vectors.
+- For frequent insertions and deletions: Use linked lists or balanced trees.
+- For maintaining a sorted order: Use balanced trees (e.g., AVL Trees, Red-Black Trees).
+- For quick lookup and unique elements: Use hash tables or sets.
+- For priority queue operations: Use heaps.
+
+In many cases, **vectors (dynamic arrays) are a good general-purpose** choice due to their simplicity, fast access time, and decent performance for most operations, especially when the overhead of maintaining pointers or balancing trees is not justified.
+
+
