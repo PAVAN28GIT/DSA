@@ -7,10 +7,10 @@
  - It is non-portable as it is specific to GCC.
 
  # what is namespace ?  
+  - similar to package in java .. they provide scope to variables , and fucntions 
+  - when we import multiple libraries (packages) if there are varibale with same name we dont want them to collide so we use namespace
+  - they organise code into groups and avoid collision
  
-   - is a declarative region that provides a scope to the identifiers ( name of data type, functions, variables, etc.)
-   - Namespaces are used to organize code into logical groups and to prevent name collisions when multiple libraries are used.
-     
 # using namespace std; 
     
   - tells the compiler to use the standard namespace. its part of the C++ Standard Library and includes many functions and objects like cout, cin, vector, and string.
