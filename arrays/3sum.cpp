@@ -1,7 +1,13 @@
 //problem : https://leetcode.com/problems/3sum/
 
 
-// 2 pointer solution
+// 3 pointer approach
+
+// intuition:
+// - sort the array
+// - u need 3 loops in brute force ..so we need 3 pointers here also.. -> 1 will be loop and other 2 as pointer
+// - now these 2 pointer shld be somewhere  btwn i+1 and last.. so lets keep one pointer at i+1 and other at last element
+// - now we will find sum of all 3 pointers and if == 0 then push into result vector , if less move j to next and if more than 0 then move k to left
 
 class Solution {
 public:
