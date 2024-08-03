@@ -4,6 +4,7 @@
      int to other data types (float, double , long , ll ) --> static_cast<float>(num);
      
      int to string --> to_string(num)
+     to convert single char digit  to int ->  char-'0'
 
      string to other types (int , float , double ) -- > stoi(num) , stof(num)
 
