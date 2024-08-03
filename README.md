@@ -1,5 +1,13 @@
 # DSA basics
 
+# conversion
+     int to other data types (float, double , long , ll ) --> static_cast<float>(num);
+     
+     int to string --> to_string(num)
+
+     string to other types (int , float , double ) -- > stoi(num) , stof(num)
+    
+     
 # #include <bits/stdc++.h>
  - header file that includes most of the standard C++ library headers. 
  - it is not part of the C++ standard and should be avoided in production code for the following reasons:
