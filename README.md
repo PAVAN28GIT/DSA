@@ -6,6 +6,15 @@
      int to string --> to_string(num)
 
      string to other types (int , float , double ) -- > stoi(num) , stof(num)
+
+
+     int :    32 bits (4 bytes) : max 10 digits
+     short :  16 bits (2 bytes) : max 5 digits
+     long  :  32 bits (4 bytes) : 
+     long long :  64 bits (8 bytes) : upto 19 digits
+     float :  32 bits (4 bytes) : ~7 decimal digits of precision
+     double : 64 bits (8 bytes) : ~15 decimal digits of precision
+
     
      
 # #include <bits/stdc++.h>
