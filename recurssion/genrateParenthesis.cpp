@@ -1,6 +1,5 @@
 // problem: https://leetcode.com/problems/generate-parentheses/
 
-// crazzzy question
 
 class Solution {
 public:
